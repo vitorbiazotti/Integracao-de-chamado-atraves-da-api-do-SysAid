@@ -1,0 +1,38 @@
+Informações
+O tipo de API utilizada é a REST, interface de programação de aplicações que segue
+conformidade com as restrições da arquitetura REST.
+
+
+
+Tipo da API: REST
+
+End point: https://servicedesk.openbankingbrasil.org.br/api/v1/
+
+Fomato dos dados de retorno e envio: JSON
+
+Fonte de conteúdo: https://community.sysaid.com/Sysforums/templates/default/help/files/Guide_REST_API.htm
+
+
+
+Importante: É Pré requisito a execução da API de Login.
+
+ 
+
+Método: Post
+
+URL: https://servicedesk.openbankingbrasil.org.br/api/v1/sr/509/activity
+
+Body: 
+
+{"userId":"1","fromTime":"1378501200000","toTime":"1378846800000","description":"Atividade realizada com sucesso"}
+ 
+ 
+ 
+Sendo:
+ 
+UserId = código do usuário logado (obter no momento do login)
+ 
+ 
+Artigo para login da API do SysAid
+
+ 
