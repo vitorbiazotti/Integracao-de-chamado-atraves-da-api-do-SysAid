@@ -1,0 +1,44 @@
+Esta API é utilizada para alteração no chamado, ou seja, será possível alterar alguns campos para que o usuário faça as análises e inclusão de informações.
+Importante: É Pré requisito a execução da API de Login.
+
+
+
+O tipo de API utilizada é a REST, interface de programação de aplicações que segue
+conformidade com as restrições da arquitetura REST.
+
+
+
+Tipo da API: REST
+
+End point: https://servicedesk.openbankingbrasil.org.br/api/v1/
+
+Fomato dos dados de retorno e envio: JSON
+
+Fonte de conteúdo: https://community.sysaid.com/Sysforums/templates/default/help/files/Guide_REST_API.htm 
+
+https://community.sysaid.com/help-page.htm?helpPageId=14823&helpPageName=CustomNotificationsForm.htm&edition=2&version=v20.3.64&Admin=Y&productId=1&lang=pt&notAddingIndexJSP=true
+
+ 
+
+ 
+
+API Login: https://servicedesk.openbankingbrasil.org.br/ShowFAQ.jsp?print=true&articleId=74&notAddingIndexJSP=true
+
+ 
+
+Encaminhado N2 atendimento: https://servicedesk.openbankingbrasil.org.br/ShowFAQ.jsp?print=true&articleId=69&notAddingIndexJSP=true
+
+ 
+
+Em análise N2: https://servicedesk.openbankingbrasil.org.br/ShowFAQ.jsp?print=true&articleId=70&notAddingIndexJSP=true
+
+
+Em atendimento N2: https://servicedesk.openbankingbrasil.org.br/ShowFAQ.jsp?print=true&articleId=71&notAddingIndexJSP=true
+
+ 
+
+Encaminhado N1 encerramento: https://servicedesk.openbankingbrasil.org.br/ShowFAQ.jsp?print=true&articleId=72&notAddingIndexJSP=true
+
+ 
+
+Nomes dos campos para API: https://servicedesk.openbankingbrasil.org.br/ShowFAQ.jsp?print=true&articleId=67&notAddingIndexJSP=true
