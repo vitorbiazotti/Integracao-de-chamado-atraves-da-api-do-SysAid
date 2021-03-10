@@ -1,0 +1,21 @@
+Nome do campo Front-End	Nome do campo para API
+Categoria	problem_type
+Data de encerramento	close_time
+Data de modificação	update_time
+Data de solicitação	insert_time
+Descrição 	description
+E-mail do novo usuário	CustomColumn7sr
+E-mail do responsável	CustomColumn14sr
+E-mail para notificação	CustomColumn12sr
+Equipe de atendimento	assigned_group
+Equipe Solucionadora	CustomColumn16sr
+Especialista Atribuido	responsibility
+Fone para contato	CustomColumn8sr
+Nome da instituição	CustomColumn9sr
+Nome do campo Front	Nome do campo para API
+Nome do novo usuário	CustomColumn6sr
+Nome do responsável	CustomColumn13sr
+Solução	solution
+Status	status
+Titulo	title
+Usuário Solicitante	request_user
