@@ -1,0 +1,75 @@
+Informações
+O tipo de API utilizada é a REST, interface de programação de aplicações que segue
+conformidade com as restrições da arquitetura REST.
+
+
+
+Tipo da API: REST
+
+End point: https://servicedesk.openbankingbrasil.org.br/api/v1/
+
+Fomato dos dados de retorno e envio: JSON
+
+Fonte de conteúdo: https://community.sysaid.com/Sysforums/templates/default/help/files/Guide_REST_API.htm
+
+
+
+Importante: É Pré requisito a execução da API de Login.
+
+
+
+Encaminhado N2 Atendimento (Status)
+
+Ao receber o chamado neste status, significa que o Suporte N1 Service Desk realizou as análises e identificou que haverá uma ação do N2 da Instituição.
+
+ 
+
+https://a.imagem.app/AzAsKa.png 
+
+ 
+
+O chamado será enviado com Status (Status) Encaminhado N2 Atendimento, o analista deverá alterar para Em Analise N2, e especificar o  Especialista atribuido (responsibillity). 
+
+ Fluxo
+
+
+
+Importante, para realizar a consulta dos chamado no método a seguir é necessário realizar o login na API do SysAid. Veja mais no artigo artigo 
+
+ 
+
+Método: GET
+
+ URL: 
+
+ Body: (manter vazio)
+
+*Código API JSON*
+
+{
+
+  "id":"398",
+
+  "info": [{"key":"title","value":"CHAMADO ALTERADO PELA API"},
+
+ 
+
+            {"key":"CustomColumn6sr", "value":"CHAMADO ALTERADO PELA API"},
+
+ 
+
+             {"key":"status", "value":"3"},
+
+             
+
+             {"key":"assigned_group", "value":"11"} ]
+
+ 
+
+}
+
+ 
+
+Consideração: Os campos para a utilização de consumo da API devem ser validados com base no formulário de atendimento do chamado de cada categoria.
+
+Verificar o artigo https://servicedesk.openbankingbrasil.org.br/ShowFAQ.jsp?print=true&articleId=67&notAddingIndexJSP=true
