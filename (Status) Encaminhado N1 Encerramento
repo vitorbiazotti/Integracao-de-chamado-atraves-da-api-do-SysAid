@@ -1,0 +1,67 @@
+Informações
+O tipo de API utilizada é a REST, interface de programação de aplicações que segue
+conformidade com as restrições da arquitetura REST.
+
+
+
+Tipo da API: REST
+
+End point: https://servicedesk.openbankingbrasil.org.br/api/v1/
+
+Fomato dos dados de retorno e envio: JSON
+
+Fonte de conteúdo: https://community.sysaid.com/Sysforums/templates/default/help/files/Guide_REST_API.htm
+
+ 
+
+Importante: É Pré requisito a execução da API de Login.
+
+
+
+(status) Encaminhado N1 Encerramento 
+Após o atendimento do chamado, o analista deverá alterar o status(status) para 'Encaminhado N1 Encerramento' para que o chamado seja devolvido ao N1 Service Desk para finalizar o atendimento.
+- Alterar o campo 'Status'(status) para 'Encaminhado N1 Encerramento'
+- Alterar no campo 'Equipe de Atendimento'(assigned_group) para N1 Service Desk
+- Incluir informações para encerramento no campo 'Solução' dentro da aba 'Solução'
+
+https://a.imagem.app/AzA6fk.png
+
+Fluxo
+
+
+
+ 
+
+Método: PUT
+
+URL: https://servicedesk.openbankingbrasil.org.br/api/v1/sr/
+
+Body:*Código API JSON*
+
+{
+
+  "id":"398",
+
+  "info": [{"key":"title","value":"CHAMADO ALTERADO PELA API"},
+
+ 
+
+            {"key":"CustomColumn6sr", "value":"CHAMADO ALTERADO PELA API"},
+
+ 
+
+             {"key":"status", "value":"3"},
+
+             
+
+             {"key":"assigned_group", "value":"11"} ]
+
+ 
+
+}
+
+ 
+
+Consideração: Os campos para a utilização de consumo da API devem ser validados com base no formulário de atendimento do chamado de cada categoria.
+
+Verificar o artigo https://servicedesk.openbankingbrasil.org.br/ShowFAQ.jsp?print=true&articleId=67&notAddingIndexJSP=true
