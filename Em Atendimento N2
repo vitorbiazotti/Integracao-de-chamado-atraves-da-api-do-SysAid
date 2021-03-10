@@ -1,0 +1,69 @@
+Informações
+O tipo de API utilizada é a REST, interface de programação de aplicações que segue
+conformidade com as restrições da arquitetura REST.
+
+
+
+Tipo da API: REST
+
+End point: https://servicedesk.openbankingbrasil.org.br/api/v1/
+
+Fomato dos dados de retorno e envio: JSON
+
+Fonte de conteúdo: https://community.sysaid.com/Sysforums/templates/default/help/files/Guide_REST_API.htm
+
+
+
+Importante: É Pré requisito a execução da API de Login.
+
+
+
+Em Atendimento N2 (status)
+Utilizado para incluir informações/anotações após ou durante a análise do chamado.
+- Alterar o campo 'Status'(status) para 'Em Atendimento N2'(status)
+- Incluir anexo () no campo 'Arraste o arquivo aqui ou clique para buscar', caso seja necessário.
+- No campo 'Todas Notas' clicar em 'Novo'() para enviar para o usuário algum comentário/nota, questionamento ou resposta.
+
+ 
+
+https://a.imagem.app/AzAFzV.png
+
+Fluxo
+
+
+
+ 
+
+Método: PUT
+
+URL: https://servicedesk.openbankingbrasil.org.br/api/v1/sr/
+
+Body: *Código API JSON*
+
+{
+
+  "id":"398",
+
+  "info": [{"key":"title","value":"CHAMADO ALTERADO PELA API"},
+
+ 
+
+            {"key":"CustomColumn6sr", "value":"CHAMADO ALTERADO PELA API"},
+
+ 
+
+             {"key":"status", "value":"3"},
+
+             
+
+             {"key":"assigned_group", "value":"11"} ]
+
+ 
+
+}
+
+ 
+
+Consideração: Os campos para a utilização de consumo da API devem ser validados com base no formulário de atendimento do chamado de cada categoria.
+
+Verificar o artigo https://servicedesk.openbankingbrasil.org.br/ShowFAQ.jsp?print=true&articleId=67&notAddingIndexJSP=true
