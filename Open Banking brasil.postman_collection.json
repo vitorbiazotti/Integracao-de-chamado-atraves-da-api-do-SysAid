@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "40768854-ac7e-46bd-85fc-d89dc82ccdf1",
+		"_postman_id": "1d36d2f5-781f-4cea-b1f0-976d864fa434",
 		"name": "Open Banking brasil",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -17,7 +17,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"user_name\":\"usuario\", \"senha\":\"sysaid\"}"
+					"raw": "{\"user_name\":\"usuario\", \"password\":\"senha\"}"
 				},
 				"url": {
 					"raw": "https://servicedesk.openbankingbrasil.org.br/api/v1/login?user",
@@ -36,7 +36,7 @@
 					"query": [
 						{
 							"key": "user",
-							"value": null
+							"value": ""
 						}
 					]
 				}
