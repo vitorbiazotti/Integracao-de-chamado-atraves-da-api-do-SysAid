@@ -1,0 +1,36 @@
+Informações
+O tipo de API utilizada é a REST, interface de programação de aplicações que segue
+conformidade com as restrições da arquitetura REST.
+
+
+
+Tipo da API: REST
+
+End point: https://servicedesk.openbankingbrasil.org.br/api/v1/
+
+Fomato dos dados de retorno e envio: JSON
+
+Fonte de conteúdo: https://community.sysaid.com/Sysforums/templates/default/help/files/Guide_REST_API.htm
+
+ 
+1. MÉTODO PARA LOGIN
+ENVIO
+
+POST: https://servicedesk.openbankingbrasil.org.br/api/v1/login?user
+
+BODY: {"user_name":"LOGIN", "password":"PASS"}
+
+ 
+
+RETORNO
+
+Armazernar o coockie para consumo dos demais métodos
+
+Nome: JSESSIONID
+
+Exemplo do valor: FEB74314575634276602976020DF5AEF
+
+ 
+
+2. MÉTODO PARA CONSULTA DE CHAMADOS
+GET: https://servicedesk.openbankingbrasil.org.br/api/v1/sr?fields=id,update_time,status,insert_time,description,solution,priority,request_user&status=1,0
